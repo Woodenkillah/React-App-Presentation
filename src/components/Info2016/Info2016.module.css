@@ -1,0 +1,91 @@
+.Info2016 {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.Info2016 h2 {
+  font-size: 2.93vw;
+  font-family: "Gotham Pro";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  position: absolute;
+  left: 8%;
+  top: 15%;
+}
+
+.Info2016 .info {
+  height: 55%;
+  width: 53%;
+  position: absolute;
+  left: 50%;
+  top: 27.5%;
+  transform: translate(-50%, 0);
+  z-index: 3;
+}
+
+.Info2016 .info_text {
+  font-size: 2vw;
+  font-family: "Gotham Pro";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  padding: 1vh 0;
+  position: absolute;
+  text-align: center;
+  width: 35%;
+  height: 10%;
+  left: 50%;
+  bottom: 23.5%;
+  transform: translate(-50%, 0);
+}
+
+.Info2016 .board {
+  position: absolute;
+  font-size: 1.4vw;
+  font-family: "Gotham Pro";
+  color: rgb(255, 255, 255);
+  width: 25%;
+  height: 39%;
+  background: linear-gradient(360deg, rgba(43, 48, 110, 0) 40%, rgba(43, 48, 110, 100) 90%);
+  border-radius: 15%;
+  top: 45%;
+  right: 8%;
+  z-index: 2;
+}
+
+.Info2016 .board p {
+  position: absolute;
+  top: 7%;
+  left: 13%;
+}
+
+.Info2016 .ice_large {
+  background: url('../../../img/3.comp/3.page/1.ice/ice_large.png') no-repeat center center;
+  background-size: 100% 100%;
+  width: 19vw;
+  height: 20vw;
+  position: absolute;
+  top: 76.25%;
+  left: 15%;
+}
+
+.Info2016 .ice_med {
+  background: url('../../../img/3.comp/3.page/1.ice/ice_med.png') no-repeat center center;
+  background-size: 100% 100%;
+  width: 10.8vw;
+  height: 10vw;
+  position: absolute;
+  top: 30%;
+  left: 91%;
+}
+
+.Info2016 .ice_small {
+  background: url('../../../img/3.comp/3.page/1.ice/ice_small.png') no-repeat center center;
+  background-size: 100% 100%;
+  width: 3.9vw;
+  height: 4vw;
+  position: absolute;
+  top: 14.5%;
+  left: -0.5%;
+}

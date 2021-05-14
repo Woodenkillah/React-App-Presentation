@@ -1,0 +1,17 @@
+.RoundPoint {
+  background: url('../../../img/1.comp/1.big-round/ellipse.png') no-repeat center center;
+  background-size: 100% 100%;
+  position: absolute;
+}
+
+.RoundPoint div {
+  position: relative;
+}
+
+.RoundPoint p {
+  font-size: 2vw;
+  font-family: "Lato";
+  color: rgb(13, 49, 156);
+  position: absolute;
+  white-space: nowrap;
+}

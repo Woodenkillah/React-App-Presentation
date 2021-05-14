@@ -1,7 +1,11 @@
-.App {
-
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App h1 {
-    border: 2px solid black
+html {
+    overflow-y: hidden;
 }

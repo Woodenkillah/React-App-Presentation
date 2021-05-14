@@ -1,0 +1,16 @@
+.TextNote {
+  position: absolute;
+}
+
+.TextNote .pic_num {
+  font-size: 3.125vw;
+  font-family: "Lato Semibold";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+}
+
+.TextNote .pic_text {
+  font-family: "Lato";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+}

@@ -1,0 +1,18 @@
+.TitlePage {
+    background: url('../../../img/1.comp/background_1.jpg') no-repeat center center;
+    background-size: 100% 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.TitlePage h1 {
+    font-size: 3.8vw;
+    font-family: "Gotham Pro";
+    color: rgb(13, 49, 156);
+    line-height: 1.2;
+    position: absolute;
+    left: 15%;
+    top: 25%;
+    transform: translate(-15%, -25%);
+}
+  

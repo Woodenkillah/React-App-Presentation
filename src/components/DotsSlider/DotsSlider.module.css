@@ -1,0 +1,26 @@
+.DotsSlider {
+  width: 0.1vw;
+  height: 89vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.DotsSlider .dots {
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  transform: translate(0, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.DotsSlider .dots div{
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: rgb(255, 255, 255);
+  cursor: pointer;
+  margin: 25% 0;
+}
