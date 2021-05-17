@@ -1,11 +1,12 @@
 import React from 'react';
 import styles from './Scroller.module.css';
+import { SECOND_PAGE_INDEX } from '../../constants';
 
-const Scroller = ({setActivePage, secondPage}) => {
+const Scroller = ({setActivePage}) => {
 
     const scrollDownHandler = () => {
 
-        setActivePage(secondPage)
+        setActivePage(SECOND_PAGE_INDEX)
 
         window.scrollTo({
             top: document.documentElement.clientHeight,
