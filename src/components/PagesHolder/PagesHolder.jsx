@@ -11,39 +11,27 @@ const PagesHolder = ({ children }) => {
 
   const lastPageIndex = childrenPages.length - 1;
 
-  const [activePage, setActivePage] = useState(FIRST_PAGE_INDEX);
+  const [activePage, setActivePage] = useState(``);
 
   const setLocalStorage = currentActivePage => {
     localStorage.setItem(`currentActivePage`, JSON.stringify(currentActivePage));
   };
 
-  // useEffect(() => {
+  useEffect(() => {
 
-  //   if (!JSON.parse(localStorage.getItem(`currentActivePage`))) {
-  //     setLocalStorage(activePage);
-  //   } else {
-  //     setActivePage(JSON.parse(localStorage.getItem(`currentActivePage`)));
-  //   }
+    if (!JSON.parse(localStorage.getItem(`currentActivePage`))) {
+      setLocalStorage(FIRST_PAGE_INDEX);
+    }
 
-  //   const screenRollStep = document.documentElement.clientHeight;
+    setActivePage(JSON.parse(localStorage.getItem(`currentActivePage`)));
 
-  //   window.scrollTo({
-  //     top: screenRollStep * activePage,
-  //     behavior: `instant`
-  //   });
+    console.log(activePage)
 
-  //   return () => {
-  //     setLocalStorage(activePage);
-  //   }
-  // });
+  }, [JSON.parse(localStorage.getItem(`currentActivePage`))]);
 
   useEffect(() => {
-    setLocalStorage(activePage)
-  });
 
-  useEffect(() => {
-    
-    const wheelScrollHandler = (evt) => { 
+    const wheelScrollHandler = (evt) => {
       const screenRollStep = document.documentElement.clientHeight;
 
       if (evt.deltaY > 0 && activePage !== lastPageIndex) {
@@ -52,8 +40,8 @@ const PagesHolder = ({ children }) => {
           behavior: `smooth`
         });
 
-        setActivePage((prevState) => prevState + PAGE_INDEX_STEP);
-        // setLocalStorage(activePage);
+        setLocalStorage(activePage + PAGE_INDEX_STEP);
+        setActivePage(JSON.parse(localStorage.getItem(`currentActivePage`)));
 
       } else if (evt.deltaY < 0 && activePage !== FIRST_PAGE_INDEX) {
         window.scrollTo({
@@ -61,8 +49,8 @@ const PagesHolder = ({ children }) => {
           behavior: `smooth`
         });
 
-        setActivePage((prevState) => prevState - PAGE_INDEX_STEP);
-        // setLocalStorage(activePage);
+        setLocalStorage(activePage - PAGE_INDEX_STEP);
+        setActivePage(JSON.parse(localStorage.getItem(`currentActivePage`)));
       }
     };
 
@@ -89,6 +77,7 @@ const PagesHolder = ({ children }) => {
             emptyDotsList={emptyDotsList}
             activePage={activePage}
             setActivePage={setActivePage}
+            setLocalStorage={setLocalStorage}
           />
         )
         || null
@@ -96,7 +85,12 @@ const PagesHolder = ({ children }) => {
 
       {
         childrenPages[SECOND_PAGE_INDEX]
-        && <Scroller setActivePage={setActivePage} />
+        && (
+          <Scroller
+            setActivePage={setActivePage}
+            setLocalStorage={setLocalStorage}
+          />
+        )
         || null
       }
 
