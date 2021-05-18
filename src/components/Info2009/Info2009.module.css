@@ -1,7 +1,9 @@
 .Info2009 {
   height: 100vh;
+  width: 100vw;
+  max-width: 1024px;
   position: relative;
-  overflow: hidden;
+  /* left: 2vw; */
 }
 
 .Info2009 h2 {
@@ -46,7 +48,7 @@
   height: 20vw;
   position: absolute;
   top: 73.5%;
-  left: 89%;
+  left: 80.5%;
 }
 
 .Info2009 .ice_med {

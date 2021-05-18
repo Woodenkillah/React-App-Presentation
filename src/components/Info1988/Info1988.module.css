@@ -1,6 +1,9 @@
 .Info1988 {
   height: 100vh;
+  width: 100vw;
+  max-width: 1024px;
   position: relative;
+  left: 0;
 }
 
 .Info1988 h2 {

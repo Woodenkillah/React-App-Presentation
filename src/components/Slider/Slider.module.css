@@ -1,0 +1,55 @@
+.Slider {
+  position: absolute;
+  left: 19%;
+  bottom: 10%;
+  width: 62%;
+}
+
+/* track styling */
+
+.Slider input {
+  width: 100%;
+}
+
+.Slider input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 15px;
+  cursor: pointer;
+  background: rgb(67,80,99);
+}
+
+.Slider input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #a2f8f4;
+}
+
+.Slider input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 15px;
+  cursor: pointer;
+  background: #3071a9;
+}
+
+.Slider input[type=range]::-ms-track {
+  width: 100%;
+  height: 15px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+}
+.Slider input[type=range]::-ms-fill-lower {
+  background: rgb(209,234,255);
+}
+.Slider input[type=range]:focus::-ms-fill-lower {
+  background: rgb(209,234,255);
+}
+.Slider input[type=range]::-ms-fill-upper {
+  background: rgb(67,80,99);
+}
+.Slider input[type=range]:focus::-ms-fill-upper {
+  background: rgb(67,80,99);
+}
+
+/* thumb styling */
+

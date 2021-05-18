@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import styles from './PagesHolder.module.css';
 import DotsSlider from '../DotsSlider/DotsSlider';
 import Scroller from '../Scroller/Scroller';
-import { FIRST_PAGE_INDEX, SECOND_PAGE_INDEX, PAGE_INDEX_STEP } from '../../constants';
+import { FIRST_PAGE_INDEX, SECOND_PAGE_INDEX, PAGE_STEP_INDEX } from '../../constants';
 
 const PagesHolder = ({ children }) => {
 
@@ -25,8 +25,6 @@ const PagesHolder = ({ children }) => {
 
     setActivePage(JSON.parse(localStorage.getItem(`currentActivePage`)));
 
-    console.log(activePage)
-
   }, [JSON.parse(localStorage.getItem(`currentActivePage`))]);
 
   useEffect(() => {
@@ -36,28 +34,25 @@ const PagesHolder = ({ children }) => {
 
       if (evt.deltaY > 0 && activePage !== lastPageIndex) {
         window.scrollTo({
-          top: screenRollStep * (activePage + PAGE_INDEX_STEP),
+          top: screenRollStep * (activePage + PAGE_STEP_INDEX),
           behavior: `smooth`
         });
 
-        setLocalStorage(activePage + PAGE_INDEX_STEP);
+        setLocalStorage(activePage + PAGE_STEP_INDEX);
         setActivePage(JSON.parse(localStorage.getItem(`currentActivePage`)));
 
       } else if (evt.deltaY < 0 && activePage !== FIRST_PAGE_INDEX) {
         window.scrollTo({
-          top: screenRollStep * (activePage - PAGE_INDEX_STEP),
+          top: screenRollStep * (activePage - PAGE_STEP_INDEX),
           behavior: `smooth`
         });
 
-        setLocalStorage(activePage - PAGE_INDEX_STEP);
+        setLocalStorage(activePage - PAGE_STEP_INDEX);
         setActivePage(JSON.parse(localStorage.getItem(`currentActivePage`)));
       }
     };
 
     window.addEventListener('mousewheel', wheelScrollHandler);
-
-    console.log(`localStorage: ${JSON.parse(localStorage.getItem(`currentActivePage`))}`);
-    console.log(`activePage: ${activePage}`)
 
     return () => {
       window.removeEventListener('mousewheel', wheelScrollHandler);
