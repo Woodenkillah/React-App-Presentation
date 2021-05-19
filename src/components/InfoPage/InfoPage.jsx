@@ -1,29 +1,34 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './InfoPage.module.css';
-import TabsHolder from '../TabsHolder/TabsHolder';
+import SlidesHolder from '../SlidesHolder/SlidesHolder';
 import Info1988 from '../Info1988/Info1988';
 import Info2009 from '../Info2009/Info2009';
 import Info2016 from '../Info2016/Info2016';
 import Slider from '../Slider/Slider';
+import { FIRST_SLIDE_INDEX } from '../../constants';
 
 const InfoPage = () => {
 
-    const TAB_STEP_INDEX = 0;
+  const [activeSlide, setActiveSlide] = useState(FIRST_SLIDE_INDEX);
+  const [lastSlideIndex, setLastSlideIndex] = useState(2)
 
-    const [tabIndex, setTabIndex] = useState(TAB_STEP_INDEX);
-
-    console.log(tabIndex)
-
-    return (
-        <div className={styles.InfoPage}>
-            <TabsHolder tabIndex={tabIndex}>
-                <Info1988 />
-                <Info2009 />
-                <Info2016 />
-            </TabsHolder>
-            <Slider onSetTabIndex={setTabIndex}/>
-        </div>
-    );
+  return (
+    <div className={styles.InfoPage}>
+      <SlidesHolder
+        activeSlide={activeSlide}
+        onSetLastSlideIndex={setLastSlideIndex}
+      >
+        <Info1988 />
+        <Info2009 />
+        <Info2016 />
+      </SlidesHolder>
+      <Slider
+        activeSlide={activeSlide}
+        onSetActiveSlide={setActiveSlide}
+        lastSlideIndex={lastSlideIndex}
+      />
+    </div>
+  );
 };
 
 export default InfoPage;

@@ -1,25 +1,31 @@
 import React, { useRef } from 'react';
 import styles from './Slider.module.css';
+import { FIRST_SLIDE_INDEX, SLIDE_STEP_INDEX, DEFAULT_SLIDE_VALUE } from '../../constants';
 
-const Slider = ({onSetTabIndex}) => {
+const Slider = ({ activeSlide, onSetActiveSlide, lastSlideIndex }) => {
 
-  const inputRef = useRef(null)
+  const inputRef = useRef(null);
 
-  const indicateChange = () => {
-    onSetTabIndex(inputRef.current.value)
+  const slideChangeHandler = () => {
+    onSetActiveSlide(inputRef.current.value)
   };
+
+  console.log(activeSlide)
 
   return (
     <div className={styles.Slider} >
       <input
-        onChange={indicateChange}
+        onChange={slideChangeHandler}
         ref={inputRef}
         type={`range`}
-        min={`0`}
-        max={`2`}
-        step={`1`}
-        defaultValue={`0`}
+        min={FIRST_SLIDE_INDEX}
+        max={lastSlideIndex}
+        step={SLIDE_STEP_INDEX}
+        defaultValue={DEFAULT_SLIDE_VALUE}
       />
+      <div className={styles.year_1988}>1988</div>
+      <div className={styles.year_2009}>2009</div>
+      <div className={styles.year_2016}>2016</div>
     </div>
   );
 };

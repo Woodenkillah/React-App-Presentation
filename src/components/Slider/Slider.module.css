@@ -1,21 +1,54 @@
 .Slider {
   position: absolute;
-  left: 19%;
-  bottom: 10%;
-  width: 62%;
+  left: 16%;
+  bottom: 9%;
+  width: 68%;
+  height: 15px;
+  background: linear-gradient(90deg, rgba(255,255,255,0) 5%, rgba(209,234,255,1) 5%, rgba(209,234,255,1) 95%, rgba(255,255,255,0) 95%);
 }
 
-/* track styling */
+.Slider div {
+  font-size: 2vw;
+  font-family: "Gotham Pro";
+  color: rgb(255, 255, 255);
+  position: absolute;
+}
+
+.Slider .year_1988 {
+  left: 2%;
+  top: 250%;
+}
+
+.Slider .year_2009 {
+  left: 45%;
+  top: 250%;
+}
+
+.Slider .year_2016 {
+  right: 5%;
+  top: 250%;
+}
 
 .Slider input {
+  position: absolute;
+  bottom: 10px;
+}
+
+.Slider input[type=range] {
+  -webkit-appearance: none;
   width: 100%;
+  background: transparent;
+}
+
+.Slider input[type=range]:focus {
+  outline: none;
 }
 
 .Slider input[type=range]::-webkit-slider-runnable-track {
   width: 100%;
   height: 15px;
   cursor: pointer;
-  background: rgb(67,80,99);
+  background: transparent;
 }
 
 .Slider input[type=range]:focus::-webkit-slider-runnable-track {
@@ -26,7 +59,7 @@
   width: 100%;
   height: 15px;
   cursor: pointer;
-  background: #3071a9;
+  background: transparent;
 }
 
 .Slider input[type=range]::-ms-track {
@@ -38,18 +71,35 @@
   border-width: 16px 0;
   color: transparent;
 }
-.Slider input[type=range]::-ms-fill-lower {
-  background: rgb(209,234,255);
-}
-.Slider input[type=range]:focus::-ms-fill-lower {
-  background: rgb(209,234,255);
-}
-.Slider input[type=range]::-ms-fill-upper {
-  background: rgb(67,80,99);
-}
-.Slider input[type=range]:focus::-ms-fill-upper {
-  background: rgb(67,80,99);
+
+
+.Slider input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 80px;
+  width: 80px;
+  background: url('../../../img/4.general/4.slider/shield.png') no-repeat 10px 20px;
+  background-size: 60%;
+  cursor: pointer;
+  margin-top: -40px;
+  margin-left: 0;
 }
 
-/* thumb styling */
+.Slider input[type=range]::-moz-range-thumb {
+  height: 80px;
+  width: 80px;
+  background: url('../../../img/4.general/4.slider/shield.png') no-repeat 10px 10px;
+  background-size: 60%;
+  cursor: pointer;
+  margin-top: -40px;
+  margin-left: 0;
+}
 
+.Slider input[type=range]::-ms-thumb {
+  height: 80px;
+  width: 80px;
+  background: url('../../../img/4.general/4.slider/shield.png') no-repeat 10px 20px;
+  background-size: 60%;
+  cursor: pointer;
+  margin-top: -40px;
+  margin-left: 0;
+}

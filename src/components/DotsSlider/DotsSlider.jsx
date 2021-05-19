@@ -4,14 +4,14 @@ import styles from './DotsSlider.module.css';
 const DotsSlider = ({ 
   emptyDotsList,
   activePage,
-  setActivePage,
-  setLocalStorage
+  onSetActivePage,
+  onSetLocalStorage
 }) => {
 
   const scrollHandler = (pageIndex) => () => {
 
-    setLocalStorage(pageIndex);
-    setActivePage(JSON.parse(localStorage.getItem(`currentActivePage`)));
+    onSetLocalStorage(pageIndex);
+    onSetActivePage(JSON.parse(localStorage.getItem(`currentActivePage`)));
 
     window.scrollTo({
       top: document.documentElement.clientHeight * pageIndex,

@@ -2,12 +2,12 @@ import React from 'react';
 import styles from './Scroller.module.css';
 import { SECOND_PAGE_INDEX } from '../../constants';
 
-const Scroller = ({setActivePage, setLocalStorage}) => {
+const Scroller = ({onSetActivePage, onSetLocalStorage}) => {
 
     const scrollDownHandler = () => {
 
-        setLocalStorage(SECOND_PAGE_INDEX)
-        setActivePage(JSON.parse(localStorage.getItem(`currentActivePage`)))
+        onSetLocalStorage(SECOND_PAGE_INDEX)
+        onSetActivePage(JSON.parse(localStorage.getItem(`currentActivePage`)))
 
         window.scrollTo({
             top: document.documentElement.clientHeight,

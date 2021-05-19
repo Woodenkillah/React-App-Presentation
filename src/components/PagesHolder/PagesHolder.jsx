@@ -71,8 +71,8 @@ const PagesHolder = ({ children }) => {
           <DotsSlider
             emptyDotsList={emptyDotsList}
             activePage={activePage}
-            setActivePage={setActivePage}
-            setLocalStorage={setLocalStorage}
+            onSetActivePage={setActivePage}
+            onSetLocalStorage={setLocalStorage}
           />
         )
         || null
@@ -82,8 +82,8 @@ const PagesHolder = ({ children }) => {
         childrenPages[SECOND_PAGE_INDEX]
         && (
           <Scroller
-            setActivePage={setActivePage}
-            setLocalStorage={setLocalStorage}
+            onSetActivePage={setActivePage}
+            onSetLocalStorage={setLocalStorage}
           />
         )
         || null

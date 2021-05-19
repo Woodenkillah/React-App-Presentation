@@ -1,6 +1,5 @@
-.TabsHolder {
+.SlidesHolder {
     position: absolute;
-    width: 300%;
     height: 100%;
     transform: translateX(0);
     transition: transform .45s ease-in;
