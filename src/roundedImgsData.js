@@ -89,13 +89,13 @@ export const ROUND_PIC_SETS = {
       },
       textStyle: {
         position: `absolute`,
-        right: `7%`,
+        right: `14%`,
         bottom: `115%`,
         display: `flex`,
         flexDirection: `column`,
         alignItems: `center`,
         whiteSpace: `nowrap`,
-        fontSize: `1.855vw`
+        fontSize: `1.855vmin`
       },
       text: `Мышцы`,
       number: `2`
@@ -119,13 +119,13 @@ export const ROUND_PIC_SETS = {
       },
       textStyle: {
         position: `absolute`,
-        right: `3%`,
+        left: `10%`,
         bottom: `115%`,
         display: `flex`,
         flexDirection: `column`,
         alignItems: `center`,
         whiteSpace: `nowrap`,
-        fontSize: `1.855vw`
+        fontSize: `1.855vmin`
       },
       text: `β-клетки`,
       number: `1`
@@ -135,8 +135,8 @@ export const ROUND_PIC_SETS = {
       imgStyle: {
         position: `absolute`,
         width: `70%`,
-        left: `1.5vw`,
-        top: `1.85vw`
+        left: `15%`,
+        top: `25%`
       },
       containerStyle: {
         right: `2%`,
@@ -148,13 +148,13 @@ export const ROUND_PIC_SETS = {
       },
       textStyle: {
         position: `absolute`,
-        right: `12%`,
+        right: `20%`,
         bottom: `115%`,
         display: `flex`,
         flexDirection: `column`,
         alignItems: `center`,
         whiteSpace: `nowrap`,
-        fontSize: `1.855vw`
+        fontSize: `1.855vmin`
       },
       text: `Печень`,
       number: `3`
@@ -187,7 +187,7 @@ export const ROUND_PIC_SETS = {
         flexDirection: `column`,
         alignItems: `center`,
         whiteSpace: `nowrap`,
-        fontSize: `1.855vw`
+        fontSize: `1.855vmin`
       },
       text: `β-клетки`,
       number: `1`
@@ -218,7 +218,7 @@ export const ROUND_PIC_SETS = {
         flexDirection: `column`,
         alignItems: `center`,
         whiteSpace: `pre`,
-        fontSize: `1.855vw`
+        fontSize: `1.855vmin`
       },
       text: `Дефект\nα-клеток`,
       number: ``
@@ -249,7 +249,7 @@ export const ROUND_PIC_SETS = {
         flexDirection: `column`,
         alignItems: `flex-start`,
         whiteSpace: `pre`,
-        fontSize: `1.855vw`
+        fontSize: `1.855vmin`
       },
       text: `Жировые\nклетки`,
       number: `4`
@@ -280,7 +280,7 @@ export const ROUND_PIC_SETS = {
         flexDirection: `column`,
         alignItems: `center`,
         whiteSpace: `nowrap`,
-        fontSize: `1.855vw`
+        fontSize: `1.855vmin`
       },
       text: `Мышцы`,
       number: `5`
@@ -311,7 +311,7 @@ export const ROUND_PIC_SETS = {
         flexDirection: `column`,
         alignItems: `center`,
         whiteSpace: `nowrap`,
-        fontSize: `1.855vw`
+        fontSize: `1.855vmin`
       },
       text: `Печень`,
       number: `6`
@@ -342,7 +342,7 @@ export const ROUND_PIC_SETS = {
         alignItems: `center`,
         whiteSpace: `pre`,
         textAlign: `center`,
-        fontSize: `1.855vw`
+        fontSize: `1.855vmin`
       },
       text: `Головной\nмозг`,
       number: `7`
@@ -373,7 +373,7 @@ export const ROUND_PIC_SETS = {
         flexDirection: `column`,
         alignItems: `flex-end`,
         whiteSpace: `pre`,
-        fontSize: `1.855vw`
+        fontSize: `1.855vmin`
       },
       text: `Почки`,
       number: `8`
@@ -398,14 +398,14 @@ export const ROUND_PIC_SETS = {
       },
       textStyle: {
         position: `absolute`,
-        left: `-235%`,
-        bottom: `10%`,
+        left: `-200%`,
+        bottom: `20%`,
         display: `flex`,
         flexDirection: `column`,
         alignItems: `flex-end`,
         whiteSpace: `pre`,
         textAlign: `right`,
-        fontSize: `1.855vw`
+        fontSize: `1.855vmin`
       },
       text: `Инкретиновый\nэффект`,
       number: ``
@@ -440,7 +440,7 @@ export const ROUND_PIC_SETS = {
         whiteSpace: `nowrap`,
         justifyContent: `space-around`,
         width: `165%`,
-        fontSize: `2.3vw`
+        fontSize: `2.3vmin`
       },
       text: `β-клетки`,
       number: `1`
@@ -472,7 +472,7 @@ export const ROUND_PIC_SETS = {
         whiteSpace: `nowrap`,
         justifyContent: `space-around`,
         width: `130%`,
-        fontSize: `1.855vw`
+        fontSize: `1.855vmin`
       },
       text: `Головной мозг`,
       number: `7`
@@ -503,7 +503,7 @@ export const ROUND_PIC_SETS = {
         alignItems: `flex-end`,
         whiteSpace: `pre`,
         textAlign: `right`,
-        fontSize: `1.855vw`
+        fontSize: `1.855vmin`
       },
       text: `Микрофлора\nкишечника`,
       number: `8`
@@ -534,7 +534,7 @@ export const ROUND_PIC_SETS = {
         alignItems: `flex-end`,
         whiteSpace: `pre`,
         textAlign: `right`,
-        fontSize: `1.855vw`
+        fontSize: `1.855vmin`
       },
       text: `Нарушение имунной\nрегуляции/воспаление`,
       number: `9`
@@ -565,7 +565,7 @@ export const ROUND_PIC_SETS = {
         alignItems: `flex-end`,
         whiteSpace: `pre`,
         textAlign: `right`,
-        fontSize: `1.855vw`
+        fontSize: `1.855vmin`
       },
       text: `Желудок`,
       number: `10`
@@ -597,7 +597,7 @@ export const ROUND_PIC_SETS = {
         alignItems: `flex-end`,
         whiteSpace: `pre`,
         textAlign: `right`,
-        fontSize: `1.855vw`
+        fontSize: `1.855vmin`
       },
       text: `Почки`,
       number: `11`
@@ -628,7 +628,7 @@ export const ROUND_PIC_SETS = {
         alignItems: `flex-start`,
         whiteSpace: `pre`,
         textAlign: `right`,
-        fontSize: `1.855vw`
+        fontSize: `1.855vmin`
       },
       text: `Печень`,
       number: `6`
@@ -659,7 +659,7 @@ export const ROUND_PIC_SETS = {
         alignItems: `flex-start`,
         whiteSpace: `pre`,
         textAlign: `right`,
-        fontSize: `1.855vw`
+        fontSize: `1.855vmin`
       },
       text: `Мышцы`,
       number: `5`
@@ -690,7 +690,7 @@ export const ROUND_PIC_SETS = {
         alignItems: `flex-start`,
         whiteSpace: `pre`,
         textAlign: `right`,
-        fontSize: `1.855vw`
+        fontSize: `1.855vmin`
       },
       text: `Жировые клетки`,
       number: `4`

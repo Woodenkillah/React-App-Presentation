@@ -3,11 +3,10 @@
   width: 100vw;
   max-width: 1024px;
   position: relative;
-  /* left: 2vw; */
 }
 
 .Info2009 h2 {
-  font-size: 2.93vw;
+  font-size: 2.93vmin;
   font-family: "Gotham Pro";
   color: rgb(255, 255, 255);
   line-height: 1.2;
@@ -26,7 +25,7 @@
 }
 
 .Info2009 .info_text {
-  font-size: 2vw;
+  font-size: 2vmin;
   font-family: "Gotham Pro";
   color: rgb(255, 255, 255);
   line-height: 1.2;

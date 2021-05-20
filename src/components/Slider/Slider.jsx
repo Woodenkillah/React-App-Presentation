@@ -2,15 +2,13 @@ import React, { useRef } from 'react';
 import styles from './Slider.module.css';
 import { FIRST_SLIDE_INDEX, SLIDE_STEP_INDEX, DEFAULT_SLIDE_VALUE } from '../../constants';
 
-const Slider = ({ activeSlide, onSetActiveSlide, lastSlideIndex }) => {
+const Slider = ({onSetActiveSlide, lastSlideIndex}) => {
 
   const inputRef = useRef(null);
 
   const slideChangeHandler = () => {
     onSetActiveSlide(inputRef.current.value)
   };
-
-  console.log(activeSlide)
 
   return (
     <div className={styles.Slider} >

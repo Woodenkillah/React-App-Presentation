@@ -6,6 +6,7 @@
     max-width: 1024px;
     height: 9.5vh;
     cursor: pointer;
+    z-index: 4;
 }
 
 .Scroller div {

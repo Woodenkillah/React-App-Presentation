@@ -2,8 +2,10 @@
   position: absolute;
   left: 16%;
   bottom: 9%;
-  width: 68%;
+  width: 70%;
   height: 15px;
+  cursor: pointer;
+  z-index: 1;
   background: linear-gradient(90deg, rgba(255,255,255,0) 5%, rgba(209,234,255,1) 5%, rgba(209,234,255,1) 95%, rgba(255,255,255,0) 95%);
 }
 
@@ -15,7 +17,7 @@
 }
 
 .Slider .year_1988 {
-  left: 2%;
+  left: 4.5%;
   top: 250%;
 }
 
@@ -52,7 +54,7 @@
 }
 
 .Slider input[type=range]:focus::-webkit-slider-runnable-track {
-  background: #a2f8f4;
+  z-index: 2;
 }
 
 .Slider input[type=range]::-moz-range-track {
@@ -72,7 +74,6 @@
   color: transparent;
 }
 
-
 .Slider input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
   height: 80px;
@@ -80,8 +81,8 @@
   background: url('../../../img/4.general/4.slider/shield.png') no-repeat 10px 20px;
   background-size: 60%;
   cursor: pointer;
-  margin-top: -40px;
-  margin-left: 0;
+  margin-top: -38px;
+  margin-left: 15px;
 }
 
 .Slider input[type=range]::-moz-range-thumb {
@@ -90,8 +91,8 @@
   background: url('../../../img/4.general/4.slider/shield.png') no-repeat 10px 10px;
   background-size: 60%;
   cursor: pointer;
-  margin-top: -40px;
-  margin-left: 0;
+  margin-top: -38px;
+  margin-left: 15px;
 }
 
 .Slider input[type=range]::-ms-thumb {
@@ -100,6 +101,6 @@
   background: url('../../../img/4.general/4.slider/shield.png') no-repeat 10px 20px;
   background-size: 60%;
   cursor: pointer;
-  margin-top: -40px;
-  margin-left: 0;
+  margin-top: -38px;
+  margin-left: 15px;
 }

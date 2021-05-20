@@ -6,7 +6,7 @@ export const COMPLEX_NOTES = [
       left: `19%`,
       display: `flex`,
       flexDirection: `column`,
-      fontSize: `1.855vw`,
+      fontSize: `1.855vmin`,
       alignItems: `flex-end`,
       whiteSpace: `pre`,
       textAlign: `right`
@@ -21,7 +21,7 @@ export const COMPLEX_NOTES = [
       left: `52%`,
       display: `flex`,
       flexDirection: `column`,
-      fontSize: `1.855vw`,
+      fontSize: `1.855vmin`,
       alignItems: `flex-start`,
       whiteSpace: `pre`,
       textAlign: `right`
@@ -36,7 +36,7 @@ export const COMPLEX_NOTES = [
       left: `2%`,
       display: `flex`,
       flexDirection: `column`,
-      fontSize: `1.4vw`,
+      fontSize: `1.4vmin`,
       alignItems: `center`,
       whiteSpace: `pre`
     },
@@ -50,7 +50,7 @@ export const COMPLEX_NOTES = [
       left: `52.25%`,
       display: `flex`,
       flexDirection: `column`,
-      fontSize: `1.4vw`,
+      fontSize: `1.4vmin`,
       alignItems: `center`,
       whiteSpace: `pre`
     },

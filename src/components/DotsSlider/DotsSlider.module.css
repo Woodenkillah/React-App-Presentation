@@ -1,18 +1,17 @@
 .DotsSlider {
-  /* width: 0.1vw; */
-  height: 89vh;
+  height: 65vh;
   position: fixed;
   top: 0;
-  /* right: 0; */
   z-index: 3;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   width: 100vw;
   max-width: 1024px;
 }
 
 .DotsSlider .dots {
   position: absolute;
-  top: 50%;
+  top: 68%;
   right: 3%;
   transform: translate(0, -50%);
   display: flex;

@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './DotsSlider.module.css';
+import { CURRENT_ACTIVE_PAGE_KEY } from '../../constants';
 
 const DotsSlider = ({ 
   emptyDotsList,
@@ -11,7 +12,7 @@ const DotsSlider = ({
   const scrollHandler = (pageIndex) => () => {
 
     onSetLocalStorage(pageIndex);
-    onSetActivePage(JSON.parse(localStorage.getItem(`currentActivePage`)));
+    onSetActivePage(JSON.parse(localStorage.getItem(CURRENT_ACTIVE_PAGE_KEY)));
 
     window.scrollTo({
       top: document.documentElement.clientHeight * pageIndex,

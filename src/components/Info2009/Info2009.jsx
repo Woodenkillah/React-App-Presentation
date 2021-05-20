@@ -2,8 +2,8 @@ import React from 'react';
 import styles from './Info2009.module.css';
 import RoundPic from '../RoundPic/RoundPic';
 import Arrow from '../Arrow/Arrow';
-import {ROUND_PIC_SETS} from '../../roundedImgsData';
-import {ARROW_SETS} from '../../arrowsData';
+import { ROUND_PIC_SETS } from '../../roundedImgsData';
+import { ARROW_SETS } from '../../arrowsData';
 
 const Info2009 = () => {
 
@@ -42,8 +42,11 @@ const Info2009 = () => {
           <div className={styles.ice_small}/>
           <div className={styles.info}>
             <p className={styles.info_text}>Гипергликемия</p>
+
             { imgList }
+
             { arrowsList }
+            
           </div>
         </div>
     );

@@ -1,5 +1,4 @@
 import React from 'react';
-import styles from './Arrow.module.css';
 
 const Arrow = ({arrowSrc, arrowStyle}) => {
 
@@ -7,7 +6,6 @@ const Arrow = ({arrowSrc, arrowStyle}) => {
       <img 
         src={arrowSrc}
         style={arrowStyle}
-        className={styles.Arrow}
       />
     )
 };

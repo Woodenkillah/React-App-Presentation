@@ -5,7 +5,6 @@ const RoundPoint = ({roundStyle}) => {
 
   const {containerStyles, textStyles, text} = roundStyle;
 
-
     return (
         <div className={styles.RoundPoint} style={containerStyles}>
           <div>

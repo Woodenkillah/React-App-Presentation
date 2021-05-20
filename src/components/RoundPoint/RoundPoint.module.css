@@ -9,7 +9,7 @@
 }
 
 .RoundPoint p {
-  font-size: 2vw;
+  font-size: 2vmin;
   font-family: "Lato";
   color: rgb(13, 49, 156);
   position: absolute;
