@@ -181,7 +181,6 @@ export const ROUND_PIC_SETS = {
       },
       textStyle: {
         position: `absolute`,
-        right: `-12%`,
         top: `-110%`,
         display: `flex`,
         flexDirection: `column`,
