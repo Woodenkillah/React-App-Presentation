@@ -8,10 +8,10 @@ Navigation is represented by a scrollbar at page 1, scroll dots at the left side
 
 Technology stack includes:
 
-JavaScript(ES6)
-React (hooks)
-HTML & CSS
-Webpack
+- JavaScript(ES6)
+- React (hooks)
+- HTML & CSS
+- Webpack
 
 The screenshots are presented below:
 
